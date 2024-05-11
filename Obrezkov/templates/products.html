@@ -1,0 +1,12 @@
+{% include 'base.html'%}
+
+
+{% block content %}
+
+
+{% for p in object_list %}
+<p>{{p.name}}</p>
+<p>{{p.price}}</p>
+{%endfor%}
+
+{% endblock %}
